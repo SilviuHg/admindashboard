@@ -6,37 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <div class="sidebar">
-        <p>Dashboard</p>
-        <p>Home</p>
-        <p>Profile</p>
-        <p>Messages</p>
-        <p>History</p>
-        <p>Tasks</p>
-        <p>Communities</p>
-        <p>Settings</p>
-        <p>Support</p>
-        <p>Privacy</p>
+        <div class="dashboard">
+          <div class="sidebar-icon">
+            <img class="icon-one" src="icons/view-dashboard.svg" />
+          </div>
+          <div>Dashboard</div>
+        </div>
+        <div class="home-container">
+          <div class="sidebar-icon">
+            <img class="icon-one" src="icons/home.svg" />
+          </div>
+          <div>Home</div>
+          <div class="sidebar-icon">
+            <img
+              class="icon-one"
+              src="icons/card-account-details-outline.svg"
+            />
+          </div>
+          <div>Profile</div>
+          <div class="sidebar-icon">
+            <img class="icon-one" src="icons/message-outline.svg" />
+          </div>
+          <div>Messages</div>
+          <div class="sidebar-icon">
+            <img class="icon-one" src="icons/history.svg" />
+          </div>
+          <div>History</div>
+          <div class="sidebar-icon">
+            <img class="icon-one" src="icons/file-multiple-outline.svg" />
+          </div>
+          <div>Tasks</div>
+          <div class="sidebar-icon">
+            <img class="icon-one" src="icons/account-group.svg" />
+          </div>
+          <div>Communities</div>
+        </div>
+        <div class="settings-container">
+          <div class="sidebar-icon">
+            <img class="icon-one" src="icons/cog.svg" />
+          </div>
+          <div>Settings</div>
+          <div class="sidebar-icon">
+            <img class="icon-one" src="icons/help-box-outline.svg" />
+          </div>
+          <div>Support</div>
+          <div class="sidebar-icon">
+            <img class="icon-one" src="icons/shield-check-outline.svg" />
+          </div>
+          <div>Privacy</div>
+        </div>
       </div>
       <div class="header">
-        <div class="searchbar">
-          <p>Search..</p>
+        <div class="top-section">
+          <div class="search-section">
+            <div class="search-icon">
+              <img class="magnify" src="icons/magnify.svg" width="25px" />
+            </div>
+            <div class="search-bar">
+              <form id="myform" method="get" action="#">
+                <input
+                  class="search-input"
+                  type="text"
+                  id="searchresult"
+                  name="searchresult"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="user-info">
+            <div class="icons">
+              <div>
+                <img class="" src="icons/bell-ring-outline.svg" width="25px" />
+              </div>
+              <div>
+                <img class="icon-two" src="icons/koala.png" width="40px" />
+              </div>
+            </div>
+            <div class="user">John Doe</div>
+          </div>
         </div>
-        <div class="icons">
-          <p>Icon1, Icon2</p>
-        </div>
-        <p>Hagi Silviu</p>
-        <div class="profile-icon">
-          <p>profile icon</p>
-        </div>
-        <p>Hi there, Hagi Silviu(@hagis)</p>
-        <div class="icons-group">
-          <p>New</p>
-          <p>Share</p>
-          <p>Upload</p>
+        <div class="bot-section">
+          <div class="greeting-group">
+            <div class="profile-icon">
+              <img class="icon-two" src="icons/koala.png" width="60px" />
+            </div>
+            <div class="greeting">
+              <div class="greet">Hi there,</div>
+              <div class="name">John Doe(@johnd)</div>
+            </div>
+          </div>
+          <div class="buttons-group">
+            <div><button class="bttn">New</button></div>
+            <div><button class="bttn">Share</button></div>
+            <div><button class="bttn">Upload</button></div>
+          </div>
         </div>
       </div>
       <div class="main-content">
@@ -49,10 +122,27 @@
                 <div class="project-description">
                   Nam semper tempor dui, ut consectetur nunc semper ac. In et
                   ipsum lacus. Ut sit amet massa ante. Morbi dignissim, urna eu
-                  lobortis gravida, velit neque auctor justo, id rutrum nunc
-                  sapien sed leo.
+                  lobortis gravida, id rutrum nunc sapien sed leo.
                 </div>
-                <div class="project-icons">icons</div>
+                <div class="project-icons">
+                  <div>
+                    <img
+                      class=""
+                      src="icons/star-plus-outline.svg"
+                      width="25px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class=""
+                      src="icons/eye-plus-outline.svg"
+                      width="25px"
+                    />
+                  </div>
+                  <div>
+                    <img class="" src="icons/source-fork.svg" width="25px" />
+                  </div>
+                </div>
               </div>
             </div>
             <div class="project">
@@ -61,10 +151,28 @@
                 <div class="project-description">
                   Sed tempus id ligula ut dignissim. Cras laoreet diam non
                   cursus luctus. Duis vehicula, nunc sit amet porta malesuada,
-                  ligula magna ultricies quam, vitae elementum massa urna nec
-                  urna. Curabitur malesuada eros eget mollis luctus.
+                  ligula magna ultricies quam urna. Curabitur malesuada eros
+                  eget mollis luctus.
                 </div>
-                <div class="project-icons">icons</div>
+                <div class="project-icons">
+                  <div>
+                    <img
+                      class=""
+                      src="icons/star-plus-outline.svg"
+                      width="25px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class=""
+                      src="icons/eye-plus-outline.svg"
+                      width="25px"
+                    />
+                  </div>
+                  <div>
+                    <img class="" src="icons/source-fork.svg" width="25px" />
+                  </div>
+                </div>
               </div>
             </div>
             <div class="project">
@@ -73,10 +181,28 @@
                 <div class="project-description">
                   Nulla elementum sapien consequat eros rhoncus laoreet. Nulla
                   accumsan metus id felis facilisis vestibulum. Donec molestie
-                  sodales orci, fringilla sodales eros porttitor non. Duis sit
-                  amet tellus ex. Praesent eget iaculis magna.
+                  sodales orci non. Duis sit amet tellus ex. Praesent eget
+                  iaculis magna.
                 </div>
-                <div class="project-icons">icons</div>
+                <div class="project-icons">
+                  <div>
+                    <img
+                      class=""
+                      src="icons/star-plus-outline.svg"
+                      width="25px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class=""
+                      src="icons/eye-plus-outline.svg"
+                      width="25px"
+                    />
+                  </div>
+                  <div>
+                    <img class="" src="icons/source-fork.svg" width="25px" />
+                  </div>
+                </div>
               </div>
             </div>
             <div class="project">
@@ -84,10 +210,28 @@
                 <div class="project-heading">Easy peasy app</div>
                 <div class="project-description">
                   Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                  Mauris sed elit bibendum, porta lacus quis, posuere tortor.
-                  Duis euismod neque eu tempor lobortis.
+                  Mauris sed elit bibendum, posuere tortor. Duis euismod neque
+                  eu tempor lobortis.
                 </div>
-                <div class="project-icons">icons</div>
+                <div class="project-icons">
+                  <div>
+                    <img
+                      class=""
+                      src="icons/star-plus-outline.svg"
+                      width="25px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class=""
+                      src="icons/eye-plus-outline.svg"
+                      width="25px"
+                    />
+                  </div>
+                  <div>
+                    <img class="" src="icons/source-fork.svg" width="25px" />
+                  </div>
+                </div>
               </div>
             </div>
             <div class="project">
@@ -98,7 +242,25 @@
                   In at molestie diam. Nulla posuere at arcu sed finibus.
                   Quisque nec enim eu nisi euismod suscipit a eget risus.
                 </div>
-                <div class="project-icons">icons</div>
+                <div class="project-icons">
+                  <div>
+                    <img
+                      class=""
+                      src="icons/star-plus-outline.svg"
+                      width="25px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class=""
+                      src="icons/eye-plus-outline.svg"
+                      width="25px"
+                    />
+                  </div>
+                  <div>
+                    <img class="" src="icons/source-fork.svg" width="25px" />
+                  </div>
+                </div>
               </div>
             </div>
             <div class="project">
@@ -108,9 +270,27 @@
                   Fusce sagittis tempor tincidunt. Morbi sit amet sollicitudin
                   quam, at egestas felis. Aenean non tempor urna. Cras lacus
                   eros, tristique in enim eu, euismod ultricies turpis. Quisque
-                  vitae velit placerat, tincidunt metus sed, ultrices tortor
+                  vitae velit placerat, ultrices tortor
                 </div>
-                <div class="project-icons">icons</div>
+                <div class="project-icons">
+                  <div>
+                    <img
+                      class=""
+                      src="icons/star-plus-outline.svg"
+                      width="25px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class=""
+                      src="icons/eye-plus-outline.svg"
+                      width="25px"
+                    />
+                  </div>
+                  <div>
+                    <img class="" src="icons/source-fork.svg" width="25px" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -122,19 +302,19 @@
               <div class="announcements-heading">Site maintenance</div>
               <div class="announcements-description">
                 Sed hendrerit nulla diam, vel facilisis mi lobortis non. In
-                placerat, eros sit amet euismod ornare, orci leo tincidunt urna,
-                eu sodales eros leo vel turpis...
+                placerat, eros dunt urna, eu sodales eros leo vel turpis...
               </div>
+              <hr />
               <div class="announcements-heading">Community share day</div>
               <div class="announcements-description">
                 Proin nibh lacus, rhoncus nec lobortis ac, molestie vel est.
-                Fusce rhoncus nunc sed lectus sagittis venenatis...
+                Fusce rhoncus venenatis...
               </div>
+              <hr />
               <div class="announcements-heading">Updated privacy policy</div>
               <div class="announcements-description">
                 Aliquam commodo feugiat euismod. Quisque nisl urna, sollicitudin
-                vitae ornare eu, sodales et elit. Pellentesque habitant morbi
-                tristique senectus et netus et malesuada fames...
+                vitae elit. Pellentesque habitant morbi et malesuada fames...
               </div>
             </div>
           </div>
@@ -142,28 +322,40 @@
             <div class="announcements-section-heading">Trending</div>
             <div class="trending-container">
               <div class="trending-profile">
-                <div>icon</div>
+                <div>
+                  <img class="icon-two" src="icons/fox.png" width="30px" />
+                </div>
                 <div class="trending-profile-info">
                   <div class="trending-username">@tegan</div>
                   <div class="trending-project">World peace builder</div>
                 </div>
               </div>
               <div class="trending-profile">
-                <div>icon</div>
+                <div>
+                  <img
+                    class="icon-two"
+                    src="icons/Screen Shot 2022-03-25 at 4.58.19 PM.png"
+                    width="30px"
+                  />
+                </div>
                 <div class="trending-profile-info">
-                  <div class="trending-username">@hagis</div>
+                  <div class="trending-username">@johnd</div>
                   <div class="trending-project">Super cool project</div>
                 </div>
               </div>
               <div class="trending-profile">
-                <div>icon</div>
+                <div>
+                  <img class="icon-two" src="icons/dino.jpeg" width="30px" />
+                </div>
                 <div class="trending-profile-info">
                   <div class="trending-username">@kendall</div>
                   <div class="trending-project">Life changing app</div>
                 </div>
               </div>
               <div class="trending-profile">
-                <div>icon</div>
+                <div>
+                  <img class="icon-two" src="icons/koala.png" width="30px" />
+                </div>
                 <div class="trending-profile-info">
                   <div class="trending-username">@alex</div>
                   <div class="trending-project">No traffic maker</div>
