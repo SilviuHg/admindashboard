@@ -22,7 +22,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
-  /*height: 850px;*/
+  height: 100vh;
 }
 
 .sidebar {
